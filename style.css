@@ -1,15 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --bg-dark: hsl(0, 0%, 0%);
   --bg: hsl(0, 0%, 5%);
   --bg-light: hsl(0, 0%, 10%);
   --text: hsl(0, 0%, 95%);
   --text-muted: hsl(0, 0%, 70%);
+  --bg-button: hsl(0, 0%, 85%);
 }
 
 body.light {
@@ -18,6 +19,7 @@ body.light {
   --bg-light: hsl(0, 0%, 100%);
   --text: hsl(0, 0%, 5%);
   --text-muted: hsl(0, 0%, 30%);
+  --bg-button: hsl(0, 0%, 15%);
 }
 
 body {
@@ -52,6 +54,23 @@ nav > span:hover {
   cursor: pointer;
 }
 
+nav > .theme {
+  width: 3em;
+  height: 1.5em;
+  background-color: var(--bg-light);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.theme-circle {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--bg-button);
+  border-radius: 50%;
+}
+
 main {
   width: inherit;
   height: calc(100dvh - 5em);
@@ -75,7 +94,7 @@ main > .game {
   z-index: 1;
   width: 100%;
   height: 90dvh;
-  background-image: url('./public/video/winning-effect.gif');
+  background-image: url("./public/video/winning-effect.gif");
   background-position: center;
   background-size: contain;
 }
@@ -86,13 +105,15 @@ main > .game {
   width: 100%;
   height: 30dvh;
   top: 15%;
-  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjhyNGoyeWE0dzNla3l0djRwMGJscmltcHExM2d3b2ZzeHpldTJjcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xMFAPwvgAK1Lj1EmEM/giphy.gif');
+  background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjhyNGoyeWE0dzNla3l0djRwMGJscmltcHExM2d3b2ZzeHpldTJjcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/xMFAPwvgAK1Lj1EmEM/giphy.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.hint, .moves, .user-guess {
+.hint,
+.moves,
+.user-guess {
   width: inherit;
   height: 3em;
   display: flex;
@@ -113,7 +134,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   appearance: textfield;
 }
 
@@ -136,7 +157,6 @@ input[type=number] {
   height: 100%;
 }
 
-
 footer {
   width: inherit;
   height: 2em;
@@ -152,5 +172,38 @@ footer {
 
 footer > span:hover {
   color: var(--text);
+  cursor: pointer;
+}
+
+.login-screen {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-input {
+  all: unset;
+  width: 10em;
+  height: 1.5em;
+  font-size: 1.5em;
+  background: var(--bg-light);
+  text-align: center;
+}
+
+.login-button {
+  all: unset;
+  background-color: var(--bg-button);
+  color: var(--bg-dark);
+  width: 10em;
+  height: 1.5em;
+  font-size: 1.5em;
+  text-align: center;
   cursor: pointer;
 }
