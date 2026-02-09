@@ -46,7 +46,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 10%;
-  font-size: x-large;
+  font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
 }
 
 nav > span:hover {
