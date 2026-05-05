@@ -1,4 +1,4 @@
-# 🎮 Guess Me
+# 🎮 Guess The Number
 
 A sleek, interactive number guessing game built with vanilla **HTML**, **CSS**, and **JavaScript**. Test your intuition and see if you can guess the secret number before your moves run out!
 
@@ -27,7 +27,7 @@ A sleek, interactive number guessing game built with vanilla **HTML**, **CSS**, 
 
 ## 🚀 Demo
 
-![Guess Me Demo](./public/video/guess-me-demo.gif) 
+![Game Demo](./public/video/guess-me-demo.gif) 
 
 ---
 
